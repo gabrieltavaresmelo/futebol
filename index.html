@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyBVmSNCApAHLjCZgHTZ9fqIShsZmdT-y_4",
+            authDomain: "futebol-8f0a0.firebaseapp.com",
+            databaseURL: "https://futebol-8f0a0-default-rtdb.firebaseio.com",
+            projectId: "futebol-8f0a0",
+            storageBucket: "futebol-8f0a0.appspot.com",
+            messagingSenderId: "489358540899",
+            appId: "1:489358540899:web:6a0a8491d6bca37fda3856",
+            measurementId: "G-H0MGQJSVTS"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consulta.js"></script>
+
+    </head>
+
+    <body>
+        <table id="tb">
+            <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Idade</th>
+                <th>Está Jogando</th>
+                <th>Data de Entrada</th>
+            </tr>
+        </table>
+    </body>
+</html>
